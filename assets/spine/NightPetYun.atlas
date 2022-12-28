@@ -1,0 +1,25 @@
+NightPetYun.png
+format: RGBA4444
+filter: Linear,Linear
+repeat: none
+yun3_
+  rotate: false
+  xy: 4, 4
+  size: 348, 383
+  orig: 348, 383
+  offset: 0, 0
+  index: -1
+yun2_
+  rotate: true
+  xy: 4, 393
+  size: 281, 263
+  orig: 281, 263
+  offset: 0, 0
+  index: -1
+yun1_
+  rotate: true
+  xy: 4, 680
+  size: 261, 244
+  orig: 261, 244
+  offset: 0, 0
+  index: -1

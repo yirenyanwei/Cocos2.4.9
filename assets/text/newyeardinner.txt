@@ -1,0 +1,122 @@
+一.配表
+
+1.activity_panel.xml | 活动表
+<ItemSpec id="57694" type="6" start="2023-01-15-00-00" end="2023-01-23-00-00" function_on="1" para1="" para2=" para3=""/><!--22春节-年夜饭-->
+para1="宝箱需要的积分"
+para2="为宝箱奖励"
+para3="为道具iconId"
+(para1,para2,para3可参考 activity_panel.xml 的 57664 | 客户端不需要 para1,para2,para3 服务器给发)
+
+
+2.item.xml | 通用配置
+<ItemSpec id="new_year_dinner" start1="2023-01-15-00-00" end1="2023-01-21-12-00" start2="2023-01-15-00-00" end2="2023-01-24-00-00" mailId="12345"  rankLimit="5" mailId2="12345" rankRewards="1-5;45021001"/>
+start1 = 捐献菜谱开始时间戳
+end1 = 捐献菜谱结束时间戳
+start2 =  年夜饭开始时间戳
+end2 = 年夜饭结束时间戳
+mailId = 邮件Id(开饭奖励邮件Id)
+rankLimit = 排行显示人数
+mailId2 = 邮件Id(排行奖励邮件Id)
+rankRewards = 排行奖励 1-5名次 45021001 rewardId
+
+3.new_year_dinner_score_quality.xml | 年夜饭积分品质表
+quality="int" 品质
+score="String" 积分范围|隔开
+activationNum="int" 需要激活的菜品数量
+rewardId="String" 开饭时的奖励Id 通过邮件下发
+
+4.function_on.xml |开关
+
+<ItemSpec id="new_year_dinner_open" online="close" test="all" version="8.15.0" pf="all"/><!-- 年夜饭功能 -->
+<ItemSpec id="new_year_dinner_rank_open" online="close" test="all" version="8.15.0" pf="all"/><!--年夜饭排行-->
+
+5.mail.xml  | 邮件表
+
+6.new_year_dinner_activation.xml | 菜品激活表
+
+<ItemSpec id="String" disheId="String" disheCount="int" />
+disheId="1111" 菜品道具Id
+disheCount="123" 菜品激活需要贡献的数量
+score="24" 每个提供的分数
+
+--------------------------------------------------------------------------------
+
+二.扩充枚举
+PointType
+TERRITORY_DINNING_TABLE 联盟饭桌
+TERRITORY_DINNING_TABLE_RANGE 联盟饭桌周边
+
+协议:
+key="nyd"
+
+1.getData 获取界面
+无入参
+返回：
+allianceName String 联盟名字
+dishes JSONArray 贡献菜品集合
+score int 当前贡献积分
+process int 当前玩家积分
+processBoxStr String 玩家领取的索引
+index2Score String 为宝箱需要的积分对应配表para2
+index2Reward String 宝箱奖励对应para3
+index2Icon String 道具iconId对应para4
+* 联盟饭桌放置的位置如何表示
+
+* 排行考虑是否可以加入到这个协议里面
+
+start long 活动开始时间
+end long 活动结束时间
+start1 long 捐献菜谱开始时间戳
+end1 long 捐献菜谱结束时间戳
+start2 long 领奖时间
+end2 long 
+dinnerReceiveId String 开饭奖励领取过的标识 rewardId
+rankRewards String 名次奖励  1-5;45021001
+scoreLimit = 领取年夜饭奖励积分限制
+pointId int 联盟饭桌所在点如果没有联盟饭桌此值没有
+marchTime 毫秒 行军时间
+dishes
+{
+	disheId String 菜品Id
+	disheCount int 菜品数量
+}
+
+ranks
+{
+	名次 rank int
+	领主头像 icon String
+	昵称 nickName String
+	等级 level int (联盟等级)
+	菜品积分	 score int	
+}
+
+2.contribution | 捐献 点击是走出征逻辑到目的地之后放下捐献的东西然后返回
+入参
+itemIds String itemId;count| 道具Id;贡献数量|
+
+返回
+dishes JSONArray 贡献菜品集合
+
+3.receiveBox
+入参：
+receive int 领取的下标
+
+返回:
+rewards JSONArray 奖励信息 
+processBoxStr String 领取的奖励信息 
+--------------------------------------------------------------------------------
+
+其他的可能可以走之前的协议比如行军
+放置联盟建筑
+新增pointType 后续扩充
+
+
+territory.dinnertable.create 饭桌放置
+territory.dinnertable.cancel 饭桌取消
+
+联盟饭桌推送
+	public static final String PUSH_TERRITORY_DINNERTABLE_CREATE = "push.territory.dinnertable.create";
+	public static final String PUSH_TERRITORY_DINNERTABLE_UPDATE = "push.territory.dinnertable.update";
+	public static final String PUSH_TERRITORY_DINNERTABLE_CANCEL = "push.territory.dinnertable.cancel";
+
+	territory.building.create
