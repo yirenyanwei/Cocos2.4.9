@@ -101,7 +101,50 @@ cc.Class({
         */
 
         //加载资源
-        cc.resource
+        cc.resources.load('prefabs/nianyefan', (err, prefab)=>{
+            var node = cc.instantiate(prefab)
+            this.node.addChild(node)
+            node.position = cc.v2(-200, 200)
+        })
+        cc.resources.load('images/nianyefan_build', cc.SpriteFrame, (err, spriteFrame)=>{
+            cc.log(spriteFrame)
+            this.node.getChildByName('childSpr').getComponent(cc.Sprite).spriteFrame = spriteFrame
+            //释放
+            // cc.assetManager.releaseAsset(spriteFrame)
+        })
+        //加载图集
+        cc.resources.load('images/equipmentNewUI', cc.SpriteAtlas, (err, atlas)=>{
+            let spr = this.node.getChildByName('childSpr').getComponent(cc.Sprite)
+            spr.spriteFrame = atlas.getSpriteFrame('equipNew_bg_01')
+        })
+        //批量加载
+        cc.resources.loadDir('images', (err, assets)=>{
+            console.log(assets)
+        })
+        //加载远程资源
+        var remoteUrl = 'http://127.0.0.1:8088/nianyefan_build.png'
+        cc.assetManager.loadRemote(remoteUrl, (err, texture)=>{
+            cc.log('refCount--', texture.refCount)
+            let spr = this.node.getChildByName('childSpr').getComponent(cc.Sprite)
+            let spriteFrame = new cc.SpriteFrame(texture)
+            spr.spriteFrame = spriteFrame
+        })
+        //本地资源
+        // var absolutePath = '/Users/yanwei/Desktop/nianyefan_build.png'
+        // cc.assetManager.loadRemote(absolutePath, (err, texture)=>{
+        //     cc.log('absolute--', texture)
+        // })
+        //bundle
+        cc.assetManager.loadBundle('testBundle', (err, bundle)=>{
+            console.log('bundle--', bundle)
+            bundle.load('bp_57678', cc.SpriteFrame, (err, spriteFrame)=>{
+                console.log('bundleSprite--', spriteFrame)
+                //销毁
+                bundle.release('bp_57678', cc.SpriteFrame)
+                cc.assetManager.removeBundle(bundle)
+            })
+        })
+
     },
     onEnable(){
         cc.log('onEnable')
