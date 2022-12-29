@@ -99,7 +99,7 @@ cc.Class({
         node.parent = this.node
         node.position = cc.v2(100, 100)
         */
-
+        /*
         //加载资源
         cc.resources.load('prefabs/nianyefan', (err, prefab)=>{
             var node = cc.instantiate(prefab)
@@ -144,12 +144,39 @@ cc.Class({
                 cc.assetManager.removeBundle(bundle)
             })
         })
+        */
+
+
 
     },
     onEnable(){
         cc.log('onEnable')
+        this.node.on('testEvent', this.testEvent, this)
+        //鼠标
+        this.node.on(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this)
+        //触摸
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this)
+        //键盘
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this)
     },
-
+    onDisable(){
+        this.node.off('testEvent', this.testEvent, this)
+        this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this)
+        this.node.off(cc.Node.EventType.TOUCH_START, this.onTouchStart, this)
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this)
+    },
+    testEvent(arg){
+        cc.log('this is a event', arg)
+    },
+    onMouseDown(event){
+        cc.log('mouseDown', event.getLocation(), event.getButton())
+    },
+    onTouchStart(event){
+        cc.log('onTouchStart', event)
+    },
+    onKeyDown(event){
+        cc.log('onKeyDown', event.keyCode)
+    },
     // update (dt) {},
 
     onClickChangeScene(){
@@ -162,5 +189,8 @@ cc.Class({
         cc.director.loadScene('helloworld', ()=>{
             cc.log(cc.director.getScene())
         })
+    },
+    onClickEvent(){
+        this.node.emit('testEvent', 123)
     }
 });
