@@ -52,7 +52,8 @@ cc.Class({
         prefab:{
             default: null,
             type: cc.Prefab
-        }
+        },
+        _dt: 0,
     },
     ctor(){
         cc.log('this is ctor')
@@ -88,6 +89,8 @@ cc.Class({
         //颜色
         this.node.color = cc.color(255, 0, 0)
         */
+
+
        /*
        //创建节点
         let node = new cc.Node()
@@ -146,7 +149,59 @@ cc.Class({
         })
         */
 
+        /**
+        //缓动系统
+        var obj = {scale:1, position:cc.v2(0,1), angle:0}
+        cc.tween(obj)
+            //内置easing函数
+            .to(1, {scale:2}, {easing: 'backInOut'})
+            //自定义函数
+            .to(1, {position:cc.v2(100, 100)}, {easing:t=>t*t})
+            //// 只对单个属性使用 easing 函数
+            .to(1, {angle: {value: 90, easing:'sineOutIn'}})
+            .start()
+        //progress
+        cc.tween(obj)
+            .to(1, {scale:2}, {progress:(start, end, current, radio)=>{
+                return start+(end-start)*radio
+            }})
+            //单个属性
+            .to(1, {position:{value:cc.v2(100, 100), progress:(start, end, current, t)=>{
+                //差值计算 (out: Out, a: Out, b: Out, t: number)
+                return start.lerp(end, t)
+            }}})
+            .start()
+        //插入其它缓动
+        var tween_scale = cc.tween().to(1, {scale:2})
+        var tween_move = cc.tween().to(1, {position:cc.v2(100, 100)})
+        cc.tween(obj).then(tween_scale).then(tween_move).start()
+        //并行
+        cc.tween(obj)
+            .parallel(
+                cc.tween().to(1, {scale:2}),
+                cc.tween().to(1, {position:cc.v2(100, 100)})
+            )
+            .call(()=>{
+                cc.log('执行完毕')
+            })
+            .start()
+        //重复执行
+        cc.tween(obj)
+            .repeat(3, 
+                cc.tween().by(1, {scale:1})
+                )
+            .start()
+        //延迟执行
+        cc.tween(this.node)
+            .delay(1)
+            .to(1, {scale:2})
+            .start()
+         */
 
+        /*
+        //定时器
+        this.schedule(this.scheduleCall, 1)
+        */
 
     },
     onEnable(){
@@ -192,5 +247,13 @@ cc.Class({
     },
     onClickEvent(){
         this.node.emit('testEvent', 123)
-    }
+    },
+
+    scheduleCall(dt){
+        this._dt+=dt
+        cc.log('dt', this._dt)
+        if(this._dt>=10){
+            this.unschedule(this.scheduleCall)
+        }
+    },
 });

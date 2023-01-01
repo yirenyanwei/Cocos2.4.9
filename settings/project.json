@@ -2,11 +2,16 @@
   "collision-matrix": [
     [
       true
+    ],
+    [
+      false,
+      false
     ]
   ],
   "excluded-modules": [],
   "group-list": [
-    "default"
+    "default",
+    "Player"
   ],
   "design-resolution-width": 960,
   "design-resolution-height": 640,
@@ -30,6 +35,5 @@
     "audience": {
       "enable": false
     }
-  },
-  "start-scene": "current"
+  }
 }
