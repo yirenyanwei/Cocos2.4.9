@@ -1,14 +1,14 @@
 {
+  "title": "subContext",
+  "packageName": "org.cocos2d.demo",
+  "startScene": "1231a059-750a-4950-beea-18f99ff1fa24",
   "excludeScenes": [],
   "orientation": {
-    "landscapeLeft": true,
     "landscapeRight": true,
+    "landscapeLeft": true,
     "portrait": false,
     "upsideDown": false
   },
-  "packageName": "org.cocos2d.helloworld",
-  "startScene": "077d6b50-c94f-4f0a-8a0d-a751a3218744",
-  "title": "hello_world",
   "webOrientation": "auto",
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
@@ -18,7 +18,7 @@
   "md5Cache": true,
   "nativeMd5Cache": true,
   "encryptJs": true,
-  "xxteaKey": "90eab213-9afc-41",
+  "xxteaKey": "f5455cd9-655a-4b",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {

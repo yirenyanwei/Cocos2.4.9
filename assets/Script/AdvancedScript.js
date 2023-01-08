@@ -18,7 +18,7 @@ cc.Class({
     // onLoad () {},
 
     start () {
-        this.testStorage()
+        // this.testStorage()
     },
 
     // update (dt) {},

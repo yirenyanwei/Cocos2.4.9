@@ -1,8 +1,8 @@
 {
-  "appid": "wx6ac3f5090a6b99c5",
-  "orientation": "portrait",
+  "appid": "wx698451c3bc3316d1",
+  "orientation": "landscape",
   "separate_engine": false,
   "REMOTE_SERVER_ROOT": "",
-  "subContext": "",
+  "subContext": "subContext",
   "startSceneAssetBundle": false
 }
