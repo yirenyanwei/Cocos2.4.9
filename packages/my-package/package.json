@@ -1,0 +1,26 @@
+{
+    "name": "my-package",
+    "version": "0.0.1",
+    "description": "测试扩展包",
+    "author": "yanwei",
+    "main": "main.js",
+    "main-menu": {
+        "Examples/FooBar/Foo": {
+            "message": "my-package:foo",
+            "icon":"icon/dish_01.png"
+        },
+        "Examples/FooBar/Bar": {
+            "message": "my-package:bar"
+        },
+        "Examples/FooBar/Open": {
+            "message": "my-package:open"
+        }
+    },
+    "panel": {
+        "main": "panel/index.js",
+        "type": "dockable",
+        "title": "Simple Panel",
+        "width": 400,
+        "height": 300
+    }
+  }
