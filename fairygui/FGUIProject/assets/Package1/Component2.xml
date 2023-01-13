@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="400,400" overflow="scroll" scroll="both" scrollBarFlags="80" scrollBar="auto" extention="Button" hitTest="n0_w78q">
-  <controller name="c1" pages="0,,1," selected="0"/>
+  <controller name="c1" pages="0,,1,,2," selected="1"/>
+  <controller name="c2" pages="0,,1," selected="0"/>
   <displayList>
     <image id="n1_w78q" name="n1" src="ajvn9" fileName="images/cai09.png" xy="155,20"/>
     <graph id="n0_w78q" name="n0" xy="24,22" size="100,100" type="regular_polygon" sides="3"/>
@@ -10,12 +11,16 @@
     <component id="n5_w78q" name="n5" src="ajvne" fileName="Button1.xml" xy="192,113">
       <Button controller="c1" page="1"/>
     </component>
-    <component id="n8_w78q" name="n8" src="w78q1e" fileName="Button2.xml" xy="275,26">
+    <component id="n8_w78q" name="n8" src="w78q1e" fileName="Button2danxuan.xml" xy="275,26">
       <Button controller="c1" page="0"/>
     </component>
-    <component id="n9_w78q" name="n9" src="w78q1e" fileName="Button2.xml" xy="275,58">
-      <Button controller="c1" page="1"/>
+    <component id="n9_w78q" name="n9" src="w78q1e" fileName="Button2danxuan.xml" xy="275,58">
+      <Button checked="true" controller="c1" page="1"/>
     </component>
+    <component id="n10_gnje" name="n10" src="w78q1e" fileName="Button2danxuan.xml" xy="278,88">
+      <Button controller="c1" page="2"/>
+    </component>
+    <component id="n11_gnje" name="n11" src="gnje1f" fileName="Button3fuxuan.xml" xy="287,135"/>
   </displayList>
   <Button/>
 </component>

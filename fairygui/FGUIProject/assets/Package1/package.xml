@@ -24,7 +24,8 @@
     <image id="w78q1c" name="Arial_Gradient.png" path="/font/"/>
     <font id="w78q1b" name="Arial_Gradient.fnt" path="/font/" texture="w78q1c"/>
     <component id="w78q1d" name="Component2.xml" path="/" exported="true"/>
-    <component id="w78q1e" name="Button2.xml" path="/"/>
+    <component id="w78q1e" name="Button2danxuan.xml" path="/"/>
+    <component id="gnje1f" name="Button3fuxuan.xml" path="/"/>
   </resources>
   <publish name=""/>
 </packageDescription>
