@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,400" overflow="scroll" scroll="both" scrollBarFlags="80" scrollBar="auto" extention="Button" hitTest="n0_w78q">
+  <controller name="c1" pages="0,,1," selected="0"/>
+  <displayList>
+    <image id="n1_w78q" name="n1" src="ajvn9" fileName="images/cai09.png" xy="155,20"/>
+    <graph id="n0_w78q" name="n0" xy="24,22" size="100,100" type="regular_polygon" sides="3"/>
+    <text id="n2_w78q" name="title" xy="119,145" size="35,19" fontSize="12" text="Hello"/>
+    <loader id="n3_w78q" name="icon" xy="91,176" size="94,94" url="ui://q3wvedxqajvn8" autoSize="true"/>
+    <text id="n4_w78q" name="n4" xy="-2,-3" size="26,22" fontSize="12" autoSize="none" text="111"/>
+    <component id="n5_w78q" name="n5" src="ajvne" fileName="Button1.xml" xy="192,113">
+      <Button controller="c1" page="1"/>
+    </component>
+    <component id="n8_w78q" name="n8" src="w78q1e" fileName="Button2.xml" xy="275,26">
+      <Button controller="c1" page="0"/>
+    </component>
+    <component id="n9_w78q" name="n9" src="w78q1e" fileName="Button2.xml" xy="275,58">
+      <Button controller="c1" page="1"/>
+    </component>
+  </displayList>
+  <Button/>
+</component>

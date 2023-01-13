@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="q3wvedxq" hasFavorites="true">
+  <resources>
+    <component id="m0dk0" name="Component1.xml" path="/" exported="true"/>
+    <image id="ajvn1" name="cai01.png" path="/images/" favorite="true" scale9grid="23,23,46,46"/>
+    <image id="ajvn2" name="cai02.png" path="/images/"/>
+    <image id="ajvn3" name="cai03.png" path="/images/"/>
+    <image id="ajvn4" name="cai04.png" path="/images/"/>
+    <image id="ajvn5" name="cai05.png" path="/images/"/>
+    <image id="ajvn6" name="cai06.png" path="/images/" scale9grid="23,23,46,46"/>
+    <image id="ajvn7" name="cai07.png" path="/images/"/>
+    <image id="ajvn8" name="cai08.png" path="/images/"/>
+    <image id="ajvn9" name="cai09.png" path="/images/"/>
+    <image id="ajvna" name="cai10.png" path="/images/"/>
+    <image id="ajvnb" name="cai11.png" path="/images/"/>
+    <image id="ajvnc" name="nianyefan_build.png" path="/images/"/>
+    <component id="ajvne" name="Button1.xml" path="/"/>
+    <component id="ajvnf" name="ProgressBar1.xml" path="/"/>
+    <movieclip id="w78qh" name="MovieClip1.jta" path="/"/>
+    <misc id="w78q17" name="coin-pma.atlas" path="/spine/"/>
+    <image id="w78q18" name="coin-pma.png" path="/spine/"/>
+    <spine id="w78q19" name="coin-pma.json" path="/spine/" width="305" height="302" require="w78q17,w78q18" atlasNames="coin-pma" anchor="152,151"/>
+    <font id="w78q1a" name="Sansation_Light.ttf" path="/font/" renderMode="" samplePointSize="16"/>
+    <image id="w78q1c" name="Arial_Gradient.png" path="/font/"/>
+    <font id="w78q1b" name="Arial_Gradient.fnt" path="/font/" texture="w78q1c"/>
+    <component id="w78q1d" name="Component2.xml" path="/" exported="true"/>
+    <component id="w78q1e" name="Button2.xml" path="/"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>

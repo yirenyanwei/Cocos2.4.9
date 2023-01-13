@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="640,1136" initName="Comp1">
+  <controller name="c1" homePageType="branch" pages="0,,1,en" selected="0">
+    <remark page="1" value="分支名"/>
+  </controller>
+  <displayList>
+    <text id="n0_ajvn" name="title" xy="264,21" size="75,36" fontSize="12" vars="true" text="FairyGUI{value=100}&#xA;FairyGUI{value=100}"/>
+    <component id="n4_ajvn" name="n4" src="ajvne" fileName="Button1.xml" xy="457,437" pivot="0.5,0.5" size="94,94" group="n5_ajvn"/>
+    <text id="n6_ajvn" name="n6" xy="490,473" pivot="0.5,0.5" size="28,19" group="n5_ajvn" fontSize="12" text="点击"/>
+    <component id="n7_ajvn" name="n7" src="ajvnf" fileName="ProgressBar1.xml" xy="479,400" pivot="0.5,0.5" group="n5_ajvn">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <image id="n13_ajvn" name="n13" src="ajvn5" fileName="images/cai05.png" xy="454,278" pivot="0.5,0.5" group="n5_ajvn"/>
+    <group id="n5_ajvn" name="n5" xy="454,278" size="97,253"/>
+    <movieclip id="n15_w78q" name="n15" src="w78qh" fileName="MovieClip1.jta" xy="456,145"/>
+    <loader3D id="n16_w78q" name="n16" xy="275,112" size="305,302" scale="0.5,0.5" url="ui://q3wvedxqw78q19" animation="" skin="" loop="true"/>
+    <graph id="n17_w78q" name="n17" xy="29,23" size="100,93" type="polygon" points="100,50,25,93.30127,14,18,85,9.698727"/>
+    <richtext id="n22_w78q" name="n22" xy="364,9" size="209,98" fontSize="12" ubb="true" text="this is a test[img]ui://Package1/cai01[/img]--&lt;img src=&apos;ui://Package1/cai02&apos; width=&apos;30&apos; height=&apos;30&apos;/&gt;"/>
+    <text id="n23_w78q" name="n23" xy="199,97" size="40,19" fontSize="12" text="" input="true" prompt="[color=#CCCCCC]请输入[/color]"/>
+    <loader id="n18_w78q" name="n18" xy="27,230" size="95,94" url="ui://q3wvedxqajvnb" fill="scale"/>
+    <loader id="n19_w78q" name="n19" xy="142,230" size="94,94" url="ui://q3wvedxqw78qh" autoSize="true"/>
+    <component id="n33_w78q" name="n33" src="w78q1d" fileName="Component2.xml" xy="39,361">
+      <Button title="gogogo" icon="ui://q3wvedxqajvn7"/>
+    </component>
+  </displayList>
+  <transition name="action1" autoPlay="true" autoPlayRepeat="-1">
+    <item time="0" type="Scale" target="n4_ajvn" tween="true" startValue="1,1" endValue="1.1,1.1" duration="12" ease="Back.Out"/>
+    <item time="0" type="XY" target="n6_ajvn" tween="true" startValue="305,465.5" endValue="343,465.5" duration="12"/>
+  </transition>
+</component>
