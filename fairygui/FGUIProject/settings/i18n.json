@@ -1,3 +1,14 @@
 {
-  "langFiles": []
+  "langFiles": [
+    {
+      "name": "zh_CN",
+      "path": "/Users/yanwei/Documents/Projects/Cocos2.4.9/fairygui/FGUIProject/publish/lang.xml",
+      "fontName": ""
+    },
+    {
+      "name": "en",
+      "path": "/Users/yanwei/Documents/Projects/Cocos2.4.9/fairygui/FGUIProject/publish/lang_en.xml",
+      "fontName": ""
+    }
+  ]
 }

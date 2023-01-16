@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <graph id="n1_drif" name="n1" xy="11,7" size="179,156" type="rect"/>
+    <text id="n2_drif" name="n2" xy="60,52" size="28,19" fontSize="12" text="你好">
+      <relation target="n1_drif" sidePair=""/>
+    </text>
+    <component id="n3_drif" name="n3" src="drif1h" fileName="Label1.xml" xy="210,14">
+      <Label title="你好" icon="ui://q3wvedxqajvn8"/>
+    </component>
+    <component id="n4_drif" name="n4" src="ajvne" fileName="Button1.xml" xy="310,11">
+      <Button title="haha" selectedTitle="haha1"/>
+    </component>
+    <component id="n5_drif" name="n5" src="w78q1e" fileName="Button2danxuan.xml" xy="315,114">
+      <Button title="default" selectedTitle="select"/>
+    </component>
+    <component id="n8_drif" name="n8" src="drif2b" fileName="ComboBox1.xml" xy="458,22" size="100,20">
+      <ComboBox title="请选择" visibleItemCount="4">
+        <item title="test1" value="1"/>
+        <item title="test2" value="2"/>
+        <item title="test3" value="3"/>
+        <item title="test4" value="4"/>
+        <item title="test5" value="5"/>
+      </ComboBox>
+    </component>
+    <component id="n9_drif" name="n9" src="ajvnf" fileName="ProgressBar1.xml" xy="463,72">
+      <ProgressBar value="50" max="100" sound="ui://q3wvedxqdrif2c"/>
+    </component>
+    <component id="n10_drif" name="n10" src="drif2e" fileName="Slider1.xml" xy="463,121">
+      <Slider value="50" max="100"/>
+    </component>
+    <list id="n13_drif" name="n13" xy="576,10" size="200,200" overflow="scroll" lineGap="5" defaultItem="ui://q3wvedxqdrif2j">
+      <item title="item1"/>
+      <item title="item2"/>
+      <item title="item3"/>
+      <item title="item4"/>
+      <item title="item5"/>
+    </list>
+    <list id="n14_drif" name="n14" xy="10,175" size="200,300" overflow="scroll" defaultItem="ui://q3wvedxqdrif2k" treeView="true" indent="15" clickToExpand="1">
+      <item title="Fold1" icon="ui://q3wvedxqajvn1" level="0"/>
+      <item title="Leaf1" icon="ui://q3wvedxqajvn2" level="1"/>
+      <item title="Leaf2" icon="ui://q3wvedxqajvn2" level="1"/>
+      <item title="Leaf3" icon="ui://q3wvedxqajvn2" level="1"/>
+      <item title="Fold2" icon="ui://q3wvedxqajvn1" level="0"/>
+      <item title="Leaf1" icon="ui://q3wvedxqajvn2" level="1"/>
+      <item title="Leaf2" icon="ui://q3wvedxqajvn2" level="1"/>
+    </list>
+    <movieclip id="n15_drif" name="n15" src="w78qh" fileName="MovieClip1.jta" xy="346,209" pivot="0.5,0.5" anchor="true" playing="false"/>
+  </displayList>
+  <transition name="action">
+    <item time="13" type="Animation" target="n15_drif" value="0,p"/>
+  </transition>
+  <transition name="action_start">
+    <item time="0" type="Scale" tween="true" startValue="0.9,0.9" endValue="1.1,1.1" duration="6" ease="Back.In"/>
+    <item time="6" type="Scale" tween="true" startValue="1.1,1.1" endValue="1,1" duration="6" ease="Back.Out"/>
+    <item time="24" type="Transition" value="action"/>
+  </transition>
+  <transition name="start2">
+    <item time="0" type="Scale" tween="true" startValue="1,1" endValue="1.1,1.1" duration="0" ease="Back.InOut" repeat="-1" yoyo="true"/>
+    <item time="0" type="Scale" tween="true" startValue="1.1,1.1" endValue="1.1,1.1" duration="0" ease="Back.InOut" repeat="-1" yoyo="true"/>
+    <item time="0" type="Scale" tween="true" startValue="1.1,1.1" endValue="1,1" duration="12" ease="Back.InOut" repeat="-1" yoyo="true"/>
+    <item time="0" type="XY" target="n15_drif" tween="true" startValue="346,209" endValue="750,549,0.938,0.915" duration="24" ease="Custom" customEase="2,0,0,0.31,0.0525,0.6475,0.94,1,0,1,1" path="2,0,0,5,49,15.98289,230.5826,1,2,100.591,186.6364,234.6853,116.9865,79,252,1,2,404,340,913.677,478.0049,0,0,1"/>
+    <item time="24" type="XY" target="n15_drif" value="750,549,0.938,0.915"/>
+  </transition>
+</component>

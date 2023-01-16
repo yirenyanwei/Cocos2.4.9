@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,20" extention="Slider">
+  <displayList>
+    <graph id="n0_drif" name="n0" xy="0,0" size="100,20" type="rect" lineColor="#ffa0a0a0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_drif" name="bar" xy="5,3" size="90,14" type="rect" lineSize="0" fillColor="#ff3399ff">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <component id="n2_drif" name="grip" src="drif2d" fileName="Slider1_grip.xml" xy="90,-5" size="10,30">
+      <relation target="n1_drif" sidePair="right-right"/>
+      <relation target="" sidePair="height-height"/>
+    </component>
+    <text id="n3_drif" name="title" xy="50,10" pivot="0.5,0.5" anchor="true" size="46,19" fontSize="12" text="default">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+  <Slider/>
+</component>

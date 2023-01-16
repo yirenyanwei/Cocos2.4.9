@@ -1,0 +1,11 @@
+{
+  "name": "test-plugin",
+  "displayName": "test",
+  "description": "this is a test plugin",
+  "version": "1.0",
+  "author": {
+    "name": "elex"
+  },
+  "icon": "",
+  "main": "main.js"
+}

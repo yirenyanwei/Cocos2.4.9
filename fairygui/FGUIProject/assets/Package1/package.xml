@@ -26,6 +26,45 @@
     <component id="w78q1d" name="Component2.xml" path="/" exported="true"/>
     <component id="w78q1e" name="Button2danxuan.xml" path="/"/>
     <component id="gnje1f" name="Button3fuxuan.xml" path="/"/>
+    <component id="drif1g" name="Component3.xml" path="/" exported="true"/>
+    <component id="drif1h" name="Label1.xml" path="/"/>
+    <image id="drif1i" name="ytlds_haidao_BGlan.png" path="/images/pve/"/>
+    <image id="drif1j" name="ytlds_haidao_kuang_1.png" path="/images/pve/"/>
+    <image id="drif1k" name="ytlds_ship_bg2.png" path="/images/pve/"/>
+    <image id="drif1l" name="ytlds_ship_bg3.png" path="/images/pve/"/>
+    <image id="drif1m" name="ytlds_ship_bg1.png" path="/images/pve/"/>
+    <image id="drif1n" name="ytlds_haidao_huadong1.png" path="/images/pve/"/>
+    <image id="drif1o" name="ytlds_haidao_huadong2.png" path="/images/pve/"/>
+    <image id="drif1p" name="ytlds_haidao_huadong3.png" path="/images/pve/"/>
+    <image id="drif1q" name="ytlds_haidao_biaotikuang1.png" path="/images/pve/"/>
+    <image id="drif1r" name="ytlds_ship1.png" path="/images/pve/"/>
+    <image id="drif1s" name="ytlds_gp_3.png" path="/images/pve/"/>
+    <image id="drif1t" name="ytlds_haidao_biaotikuang.png" path="/images/pve/"/>
+    <image id="drif1u" name="ytlds_xinxidikuang.png" path="/images/pve/" scale="9grid" scale9grid="11,11,22,22"/>
+    <image id="drif1v" name="ytlds_gp_1.png" path="/images/pve/"/>
+    <image id="drif1w" name="ytlds_gp_5.png" path="/images/pve/"/>
+    <image id="drif1x" name="ytlds_haidao_BGhong.png" path="/images/pve/"/>
+    <image id="drif1y" name="ytlds_gp_4.png" path="/images/pve/"/>
+    <image id="drif1z" name="ytlds_ship.png" path="/images/pve/"/>
+    <image id="drif20" name="ytlds_guanqia1.png" path="/images/pve/"/>
+    <image id="drif21" name="ytlds_gp_2.png" path="/images/pve/"/>
+    <image id="drif22" name="ytlds_ship2.png" path="/images/pve/"/>
+    <component id="drif29" name="ComboBox1_item.xml" path="/"/>
+    <component id="drif2a" name="ComboBox1_popup.xml" path="/"/>
+    <component id="drif2b" name="ComboBox1.xml" path="/" exported="true"/>
+    <sound id="drif2c" name="hey.mp3" path="/sound/"/>
+    <component id="drif2d" name="Slider1_grip.xml" path="/"/>
+    <component id="drif2e" name="Slider1.xml" path="/"/>
+    <component id="drif2f" name="ScrollBar1_arrow1.xml" path="/"/>
+    <component id="drif2g" name="ScrollBar1_arrow2.xml" path="/"/>
+    <component id="drif2h" name="ScrollBar1_grip.xml" path="/"/>
+    <component id="drif2i" name="ScrollBar1.xml" path="/" exported="true"/>
+    <component id="drif2j" name="ListItem1.xml" path="/"/>
+    <component id="drif2k" name="ListItem2.xml" path="/"/>
+    <component id="drif2l" name="PopupMenu1_item.xml" path="/"/>
+    <component id="drif2m" name="PopupMenu1.xml" path="/" exported="true"/>
+    <component id="drif2n" name="WindowFrame1.xml" path="/window/"/>
+    <component id="drif2o" name="closeBtn.xml" path="/window/"/>
   </resources>
   <publish name=""/>
 </packageDescription>

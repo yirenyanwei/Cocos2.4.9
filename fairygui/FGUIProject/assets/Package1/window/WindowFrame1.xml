@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,500" extention="Label" initName="frame">
+  <displayList>
+    <graph id="n1_drif" name="dragArea" xy="0,1" size="300,53"/>
+    <component id="n0_drif" name="closeButton" src="drif2o" fileName="window/closeBtn.xml" xy="249,1"/>
+    <graph id="n2_drif" name="contentArea" xy="-1,55" size="301,450"/>
+  </displayList>
+</component>

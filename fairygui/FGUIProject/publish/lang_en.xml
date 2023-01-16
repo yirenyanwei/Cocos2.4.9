@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Package1/Button1.xml -->
+  <string name="q3wvedxqajvne-n2_drif" mz="title">default</string>
+  <!-- Package1/Button2danxuan.xml -->
+  <string name="q3wvedxqw78q1e-n3_drif" mz="title">default</string>
+  <!-- Package1/Component1.xml -->
+  <string name="q3wvedxqm0dk0-n0_ajvn" mz="title">FairyGUI{value=100}
+FairyGUI{value=100}</string>
+  <string name="q3wvedxqm0dk0-n6_ajvn" mz="n6">click</string>
+  <string name="q3wvedxqm0dk0-n22_w78q" mz="n22">this is a test[img]ui://Package1/cai01[/img]--&lt;img src='ui://Package1/cai02' width='30' height='30'/&gt;</string>
+  <string name="q3wvedxqm0dk0-n23_w78q-prompt" mz="n23">[color=#CCCCCC]please input[/color]</string>
+  <string name="q3wvedxqm0dk0-n33_w78q" mz="n33">gogogo</string>
+  <!-- Package1/Component2.xml -->
+  <string name="q3wvedxqw78q1d-n2_w78q" mz="title">Hello</string>
+  <!-- Package1/Component3.xml -->
+  <string name="q3wvedxqdrif1g-n2_drif" mz="n2">hello</string>
+  <string name="q3wvedxqdrif1g-n3_drif" mz="n3">hello</string>
+  <string name="q3wvedxqdrif1g-n4_drif" mz="n4">haha</string>
+  <string name="q3wvedxqdrif1g-n4_drif-0" mz="n4">haha1</string>
+  <string name="q3wvedxqdrif1g-n5_drif" mz="n5">default</string>
+  <string name="q3wvedxqdrif1g-n5_drif-0" mz="n5">select</string>
+  <string name="q3wvedxqdrif1g-n8_drif" mz="n8">please select</string>
+  <string name="q3wvedxqdrif1g-n8_drif-0" mz="n8">test1</string>
+  <string name="q3wvedxqdrif1g-n8_drif-1" mz="n8">test2</string>
+  <string name="q3wvedxqdrif1g-n8_drif-2" mz="n8">test3</string>
+  <string name="q3wvedxqdrif1g-n8_drif-3" mz="n8">test4</string>
+  <string name="q3wvedxqdrif1g-n8_drif-4" mz="n8">test5</string>
+  <string name="q3wvedxqdrif1g-n13_drif-0" mz="n13">item1</string>
+  <string name="q3wvedxqdrif1g-n13_drif-1" mz="n13">item2</string>
+  <string name="q3wvedxqdrif1g-n13_drif-2" mz="n13">item3</string>
+  <string name="q3wvedxqdrif1g-n13_drif-3" mz="n13">item4</string>
+  <string name="q3wvedxqdrif1g-n13_drif-4" mz="n13">item5</string>
+  <string name="q3wvedxqdrif1g-n14_drif-0" mz="n14">Fold1</string>
+  <string name="q3wvedxqdrif1g-n14_drif-1" mz="n14">Leaf1</string>
+  <string name="q3wvedxqdrif1g-n14_drif-2" mz="n14">Leaf2</string>
+  <string name="q3wvedxqdrif1g-n14_drif-3" mz="n14">Leaf3</string>
+  <string name="q3wvedxqdrif1g-n14_drif-4" mz="n14">Fold2</string>
+  <string name="q3wvedxqdrif1g-n14_drif-5" mz="n14">Leaf1</string>
+  <string name="q3wvedxqdrif1g-n14_drif-6" mz="n14">Leaf2</string>
+  <!-- Package1/Label1.xml -->
+  <string name="q3wvedxqdrif1h-n0_drif" mz="title">haha</string>
+  <!-- Package1/ListItem1.xml -->
+  <string name="q3wvedxqdrif2j-n0_drif" mz="title">default</string>
+  <!-- Package1/ListItem2.xml -->
+  <string name="q3wvedxqdrif2k-n1_drif" mz="title">default</string>
+  <!-- Package1/PopupMenu1.xml -->
+  <string name="q3wvedxqdrif2m-n1_drif-0" mz="list">item1</string>
+  <string name="q3wvedxqdrif2m-n1_drif-1" mz="list">item2</string>
+  <string name="q3wvedxqdrif2m-n1_drif-2" mz="list">item3</string>
+  <!-- Package1/Slider1.xml -->
+  <string name="q3wvedxqdrif2e-n3_drif" mz="title">default</string>
+</resources>
