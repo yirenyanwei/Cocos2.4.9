@@ -28,6 +28,8 @@ export default class JoystickModule extends cc.EventTarget {
         this._touchArea = mainView.getChild("joystick_touch");
         this._center = mainView.getChild("joystick_center");
 
+        this._touchArea.asGraph.color = new cc.Color(0,0,0,100);
+
         this._InitX = this._center.x + this._center.width / 2;
         this._InitY = this._center.y + this._center.height / 2;
         this._touchId = -1;
@@ -60,8 +62,8 @@ export default class JoystickModule extends cc.EventTarget {
 
             if (bx < 0)
                 bx = 0;
-            else if (bx > this._touchArea.width)
-                bx = this._touchArea.width;
+            else if (bx > this._touchArea.width+this._touchArea.x)
+                bx = this._touchArea.width+this._touchArea.x;
 
             if (by > fgui.GRoot.inst.height)
                 by = fgui.GRoot.inst.height;

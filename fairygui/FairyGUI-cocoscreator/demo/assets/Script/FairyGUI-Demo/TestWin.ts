@@ -7,6 +7,7 @@ export class TestWin extends fgui.Window {
     protected onInit(): void {
         this.contentPane = fgui.UIPackage.createObject("ModalWaiting", "TestWin").asCom;
         this.contentPane.getChild("n1").onClick(this.onClickStart, this);
+        this.center();
     }
 
     private onClickStart(): void {

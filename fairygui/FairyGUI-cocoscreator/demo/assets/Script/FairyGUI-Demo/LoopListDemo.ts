@@ -25,6 +25,7 @@ export default class LoopListDemo extends cc.Component {
     
     private doSpecialEffect():void
     {
+        //scrollPane滚动容器
         //change the scale according to the distance to the middle
         var midX:number = this._list.scrollPane.posX + this._list.viewWidth / 2;
         var cnt:number = this._list.numChildren;

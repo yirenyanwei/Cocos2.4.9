@@ -12,6 +12,7 @@ export default class VirtualListDemo extends cc.Component {
     }
 
     onUILoaded() {
+        //扩展类型
         fgui.UIObjectFactory.setExtension("ui://VirtualList/mailItem", MailItem);
         
         this._view = fgui.UIPackage.createObject("VirtualList", "Main").asCom;
