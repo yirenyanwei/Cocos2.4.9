@@ -23,6 +23,9 @@ export default class TestStart extends cc.Component {
         fgui.GRoot.inst.addChild(this._view)
 
         this._view.getChild('bagBtn').onClick(this.onClickBag, this)
+
+        // this.testTween()
+
     }
 
     start () {
@@ -36,6 +39,23 @@ export default class TestStart extends cc.Component {
             this._bagWindow = new MyBagWindow();
         }
         this._bagWindow.show();
+    }
+
+    testTween(){
+        let bagBtn: fgui.GObject = this._view.getChild('bagBtn');
+        // move
+        fgui.GTween.to2(29, 505, 983, 32, 1).setTarget(bagBtn, bagBtn.setPosition).onComplete(()=>{
+            cc.log('call back')
+        })
+        // scale
+        fgui.GTween.to(1, 2, 1).setTarget(bagBtn, bagBtn.setScale).setEase(fgui.EaseType.BackInOut).setRepeat(-1, true);
+        // alpha
+        fgui.GTween.to(1, 0, 1).setTarget(bagBtn, 'alpha').setRepeat(-1, true);
+        // delay
+        fgui.GTween.delayedCall(1).onComplete(()=>{
+            cc.log('delay call')
+        });
+        
     }
 }
 
