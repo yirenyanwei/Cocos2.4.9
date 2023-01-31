@@ -24,14 +24,28 @@ cc.Class({
         //         this._bar = value;
         //     }
         // },
+        _width: 100,
+        myWidth: {
+            type: cc.Integer,
+            get(){
+                return this._width;
+            },
+            set(val){
+                this._width = val;
+            }
+        },
+        sprite: cc.Sprite,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        cc.log('ReviewJS onLoad')
+    },
 
     start () {
         // this.testJS(1,2,3)
+        this.testCocos()
     },
 
     // update (dt) {},
@@ -204,5 +218,13 @@ world!, ${obj2}`
         var map = new Map()
         map.set(123, '1')
         cc.log('map--', map.get(123), map.get(456))
+    },
+    testCocos(){
+        this.sprite.node.setPosition(cc.v2(10, 10))
+        var node = cc.instantiate(this.sprite.node);
+        node.parent = this.node;
+        node.x = 100;
+        node.destroy()
+        
     }
 });

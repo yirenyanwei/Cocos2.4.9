@@ -20,3 +20,15 @@ cc.Class({
 
     },
 });
+class MyClass1{
+    constructor(){
+          cc.log('MyClass1')   
+    }
+}
+class MyClass2 extends MyClass1{
+    constructor(){
+        super()
+        cc.log('MyClass2')   
+    }
+}
+var cls = new MyClass2()

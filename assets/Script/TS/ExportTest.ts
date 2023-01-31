@@ -4,6 +4,9 @@ export default testA1;
 
 export var testA2:string = 'yanwei';
 export var testA3:string = 'hao';
+export function testA4():void {
+
+}
 
 var testB1:boolean = true;
 var testB2:boolean = false;

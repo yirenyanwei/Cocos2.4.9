@@ -26,8 +26,6 @@ function myclass(constructor:any){
     constructor.id++;
 }
 
-cc.log('id--', Greater.id);
-
 //2、方法装饰器
 /**
 方法装饰器表达式会在运行时当作函数被调用，传入下列3个参数：
@@ -35,14 +33,15 @@ cc.log('id--', Greater.id);
 成员的名字。
 成员的属性描述符。
  */
-let greater = new Greater('default')
 function mymethod(value:boolean){
     return function(target:any, name:string, descriptor:PropertyDescriptor){
         cc.log('mymethod--', name)
         descriptor.enumerable = value
     };
 }
-greater.showMessage()
+// cc.log('id--', Greater.id);
+// let greater = new Greater('default')
+// greater.showMessage()
 
 //3、属性装饰器
 /**
