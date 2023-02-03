@@ -271,6 +271,20 @@ export default class NewClass extends cc.Component {
         //窗口Window
         //设置modalWait
         fgui.UIConfig.windowModalWaiting = 'ui://Package2/TestWait';
+
+        //Transition
+        var transition = view.getTransition('t0');
+        transition.play(()=>{
+            cc.log('play complete');
+        }, 1, 1);
+        //换帧属性
+        transition.setValue('iconFrame', 'ui://Package1/cai11');
+        //出发帧回调
+        transition.setHook('iconFrame', (label:string)=>{
+            cc.log(label, ' frame call back');
+        })
+        //播放速度
+        transition.timeScale = 0.5;
     }
     onClickRich(link:string){
         cc.log('onClickRich', link)
@@ -318,6 +332,8 @@ export default class NewClass extends cc.Component {
             this._popupWindow.modal = true;
         }
         this._popupWindow.show();
+        //窗口管理
+        
     }
     onPopupDisplay(){
         cc.log('display popup');
