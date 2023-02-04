@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" opaque="false" mask="n4_vx1s" reversedMask="true" hitTest="n3_vx1s">
+  <controller name="c1" alias="myControl" exported="true" pages="0,,1," selected="0">
+    <action type="play_transition" fromPage="0" toPage="1" transition="t0"/>
+    <action type="change_page" fromPage="0,1" toPage="0,1" controller="c2" targetPage="~1"/>
+  </controller>
+  <controller name="c2" pages="0,,1," selected="0"/>
+  <displayList>
+    <text id="n0_vx1s" name="n0" xy="37,22" size="31,19" fontSize="12" color="#ff0000" text="desc"/>
+    <graph id="n3_vx1s" name="n3" xy="25,31" size="50,50" type="rect"/>
+    <graph id="n4_vx1s" name="n4" xy="40,46" size="20,20" type="rect"/>
+    <text id="n5_vx1s" name="n5" xy="29,80" size="34,19" fontSize="12" color="#ff0000" text="test2">
+      <gearXY controller="c1" pages="1" values="50,80" default="29,80" tween="true"/>
+    </text>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Scale" target="n0_vx1s" value="1,1"/>
+    <item time="12" type="Scale" target="n0_vx1s" value="1.5,1"/>
+  </transition>
+  <customProperty target="no" propertyId="0" label="desc"/>
+</component>

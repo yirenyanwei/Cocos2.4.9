@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="50,50">
+  <displayList>
+    <graph id="n0_ideq" name="n0" xy="0,0" size="50,50" type="eclipse" fillColor="#ffff0000">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </graph>
+    <text id="n1_ideq" name="n1" xy="10,15" size="30,19" fontSize="12" text="Wait">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+  </displayList>
+</component>

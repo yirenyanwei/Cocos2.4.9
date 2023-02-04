@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,200">
+  <displayList>
+    <graph id="n0_vx1s" name="n0" xy="0,0" size="200,200" type="rect">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <text id="n1_vx1s" name="n1" xy="59,85" size="77,19" fontSize="12" text="this is a view"/>
+  </displayList>
+</component>

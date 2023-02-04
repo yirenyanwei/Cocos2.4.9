@@ -8,8 +8,8 @@
   "jpegQuality": 80,
   "compressPNG": false,
   "codeGeneration": {
-    "allowGenCode": true,
-    "codePath": "/Users/yanwei/Documents/Progects/FairyGUI/FGUIProject/publish",
+    "allowGenCode": false,
+    "codePath": "/Users/yanwei/Documents/Progects/Cocos2.4.9/assets/resources/UI/Script",
     "classNamePrefix": "UI_",
     "memberNamePrefix": "m_",
     "packageName": null,

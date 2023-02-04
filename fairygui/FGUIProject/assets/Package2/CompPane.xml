@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100" overflow="scroll" scroll="horizontal" scrollBar="hidden">
+  <displayList>
+    <graph id="n0_vx1s" name="n0" xy="0,0" size="200,100" type="rect"/>
+    <text id="n1_vx1s" name="n1" xy="0,34" size="40,19" fontSize="12" color="#ff0000" text="began"/>
+    <text id="n2_vx1s" name="n2" xy="174,35" size="26,19" fontSize="12" color="#ff0000" align="right" text="end">
+      <relation target="n0_vx1s" sidePair="right-right"/>
+    </text>
+  </displayList>
+</component>

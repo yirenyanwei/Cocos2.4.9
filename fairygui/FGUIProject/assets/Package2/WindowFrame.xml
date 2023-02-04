@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="400,400" extention="Label">
+  <displayList>
+    <graph id="n1_ideq" name="n1" xy="0,0" size="400,400" type="rect">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n5_ideq" name="n5" xy="0,0" size="400,30" type="rect" fillColor="#ff00ffff"/>
+    <graph id="n2_ideq" name="contentArea" xy="0,30" size="400,370"/>
+    <graph id="n3_ideq" name="dragArea" xy="0,0" size="400,30"/>
+    <text id="n0_ideq" name="title" xy="0,0" size="400,30" fontSize="12" align="center" vAlign="middle" autoSize="none" singleLine="true" text="title">
+      <relation target="" sidePair="width-width"/>
+    </text>
+    <component id="n4_ideq" name="closeButton" src="fafgt" fileName="WindowClose.xml" xy="370,0"/>
+  </displayList>
+</component>

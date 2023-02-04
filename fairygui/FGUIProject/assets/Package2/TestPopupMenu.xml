@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100">
+  <displayList>
+    <graph id="n0_ideq" name="n0" xy="0,0" size="100,100" type="rect" lineSize="1" lineColor="#A0A0A0" fillColor="#F0F0F0">
+      <relation target="" sidePair="width,height"/>
+    </graph>
+    <list id="n1_ideq" name="list" xy="0,0" size="100,100" defaultItem="ui://60pk7zrmfafgp">
+      <relation target="" sidePair="width"/>
+    </list>
+  </displayList>
+  <relation target="n1_ideq" sidePair="height"/>
+</component>

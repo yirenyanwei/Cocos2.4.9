@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,100">
+  <displayList>
+    <graph id="n0_ideq" name="n0" xy="0,0" size="100,100" type="rect"/>
+    <text id="n1_ideq" name="n1" xy="31,40" size="31,19" fontSize="12" text="Drag"/>
+  </displayList>
+</component>

@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<packageDescription id="60pk7zrm">
-  <resources/>
+<packageDescription id="60pk7zrm" hasFavorites="true">
+  <resources>
+    <component id="fafg0" name="ComboBox1.xml" path="/" exported="true"/>
+    <component id="fafg1" name="ComboBox1_popup.xml" path="/"/>
+    <component id="fafg2" name="ComboBox1_item.xml" path="/"/>
+    <component id="fafg3" name="CompPane.xml" path="/"/>
+    <component id="fafg4" name="Component1.xml" path="/" exported="true"/>
+    <component id="fafg5" name="Button1.xml" path="/" exported="true"/>
+    <image id="fafg6" name="cai01.png" path="/images/" exported="true" favorite="true" scale9grid="23,23,46,46"/>
+    <image id="fafg7" name="cai02.png" path="/images/" exported="true"/>
+    <movieclip id="fafg8" name="MovieClip1.jta" path="/"/>
+    <component id="fafg9" name="TestComp.xml" path="/" exported="true"/>
+    <component id="fafga" name="TestLabel.xml" path="/"/>
+    <component id="fafgb" name="TestButton.xml" path="/"/>
+    <component id="fafgc" name="TestProgressBar.xml" path="/"/>
+    <component id="fafgd" name="TestSlider.xml" path="/"/>
+    <component id="fafge" name="TestSlider_grip.xml" path="/"/>
+    <component id="fafgf" name="TestScrollBar.xml" path="/" exported="true"/>
+    <component id="fafgg" name="TestScrollBar_arrow1.xml" path="/"/>
+    <component id="fafgh" name="TestScrollBar_arrow2.xml" path="/"/>
+    <component id="fafgi" name="TestScrollBar_grip.xml" path="/"/>
+    <component id="fafgj" name="TestListItem.xml" path="/"/>
+    <component id="fafgk" name="TestDrag.xml" path="/"/>
+    <image id="fafgl" name="cai05.png" path="/images/" exported="true"/>
+    <image id="fafgm" name="cai06.png" path="/images/" exported="true" scale9grid="23,23,46,46"/>
+    <component id="fafgn" name="TestPopup.xml" path="/" exported="true"/>
+    <component id="fafgo" name="TestPopupMenu.xml" path="/" exported="true"/>
+    <component id="fafgp" name="TestPopupMenu_item.xml" path="/"/>
+    <component id="fafgq" name="TestWait.xml" path="/" exported="true"/>
+    <component id="fafgr" name="TestWindow.xml" path="/" exported="true"/>
+    <component id="fafgs" name="WindowFrame.xml" path="/"/>
+    <component id="fafgt" name="WindowClose.xml" path="/"/>
+  </resources>
+  <publish name="" codePath="/Users/yanwei/Documents/Progects/Cocos2.4.9/assets/resources/UI/Script"/>
 </packageDescription>

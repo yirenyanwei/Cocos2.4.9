@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,600">
+  <displayList>
+    <component id="n0_fgnw" name="myn0" src="fafg5" fileName="Button1.xml" xy="116,2" tooltips="this is a picture"/>
+    <image id="n1_fgnw" name="n1" src="fafg7" fileName="images/cai02.png" xy="238,2"/>
+    <movieclip id="n2_fgnw" name="n2" src="fafg8" fileName="MovieClip1.jta" xy="381,4" playing="false"/>
+    <graph id="n3_hjq1" name="n3" xy="18,98" size="100,100" type="rect"/>
+    <loader id="n4_hjq1" name="n4" xy="199,151" pivot="0.5,0.5" anchor="true" size="94,94" autoSize="true"/>
+    <text id="n5_hjq1" name="n5" xy="270,142" size="81,19" fontSize="12" color="#ffffff" text="12345678910"/>
+    <richtext id="n6_hjq1" name="n6" xy="423,143" size="73,19" fontSize="12" color="#ffffff" ubb="true" text="&lt;a href=&apos;onClickRich&apos;&gt;Hello World&lt;/a&gt;"/>
+    <text id="n7_vx1s" name="n7" xy="30,227" size="126,19" fontSize="12" color="#ffffff" autoSize="none" text="123456" input="true"/>
+    <text id="n9_vx1s" name="n9" xy="192,222" size="25,19" group="n11_vx1s" fontSize="12" color="#ffffff" text="123"/>
+    <text id="n10_vx1s" name="n10" xy="248,222" size="25,19" group="n11_vx1s" fontSize="12" color="#ffffff" text="456"/>
+    <group id="n11_vx1s" name="n11" xy="192,222" size="102,19" advanced="true"/>
+    <component id="n13_vx1s" name="n13" src="fafg5" fileName="Button1.xml" xy="14,264"/>
+    <component id="n12_vx1s" name="n12" src="fafg9" fileName="TestComp.xml" xy="31,265"/>
+    <component id="n14_vx1s" name="n14" src="fafg3" fileName="CompPane.xml" xy="172,262"/>
+    <graph id="n17_vx1s" name="n17" xy="308,284" size="50,50" type="rect"/>
+    <graph id="n18_vx1s" name="n18" xy="378,284" size="50,50" type="rect" fillColor="#ffff0000"/>
+    <component id="n19_vx1s" name="n19" src="fafga" fileName="TestLabel.xml" xy="335,169"/>
+    <component id="n20_vx1s" name="n20" src="fafgb" fileName="TestButton.xml" xy="14,395">
+      <Button title="点击" selectedTitle="点中"/>
+    </component>
+    <component id="n21_vx1s" name="n21" src="fafg0" fileName="ComboBox1.xml" xy="99,410">
+      <ComboBox visibleItemCount="10"/>
+    </component>
+    <component id="n22_vx1s" name="n22" src="fafgc" fileName="TestProgressBar.xml" xy="230,415" size="103,15">
+      <ProgressBar value="50" max="100"/>
+    </component>
+    <component id="n23_vx1s" name="n23" src="fafgd" fileName="TestSlider.xml" xy="247,383">
+      <Slider value="50" max="100"/>
+    </component>
+    <component id="n24_vx1s" name="n24" src="fafgf" fileName="TestScrollBar.xml" xy="273,102"/>
+    <graph id="n26_vx1s" name="n26" xy="15,446" size="100,140" type="rect"/>
+    <list id="n25_vx1s" name="n25" xy="15,446" size="100,140" selectionMode="multipleSingleClick" overflow="scroll" defaultItem="ui://60pk7zrmfafgj">
+      <relation target="n26_vx1s" sidePair=""/>
+      <relation target="" sidePair="width-width,height-height"/>
+      <item title="123"/>
+      <item title="456"/>
+      <item title="789"/>
+    </list>
+    <graph id="n27_vx1s" name="n27" xy="141,452" size="55,55" type="rect"/>
+    <text id="n28_vx1s" name="n28" xy="148,470" size="42,19" fontSize="12" color="#ff0000" text="popup"/>
+    <component id="n29_ideq" name="n29" src="fafgk" fileName="TestDrag.xml" xy="241,448"/>
+    <loader id="n30_ideq" name="n30" xy="405,495" pivot="0.5,0.5" anchor="true" size="94,94" url="ui://60pk7zrmfafgl"/>
+  </displayList>
+  <transition name="t0">
+    <item time="0" type="Icon" target="n30_ideq" value="ui://60pk7zrmfafgl"/>
+    <item time="0" type="Scale" target="n30_ideq" tween="true" startValue="1,1" endValue="0.5,0.5" duration="12" label2="scaleFrame" ease="Back.In" repeat="1" yoyo="true"/>
+    <item time="0" type="XY" target="n30_ideq" tween="true" startValue="405,495" endValue="405,389" duration="12" ease="Custom" customEase="" path="2,0,0,12,48,117.8413,44.64681,1,2,133.0001,-2.999939,147.7724,-49.43187,77.00006,-85,1,2,77.00006,-135,77.00006,-185,14,-30,1,2,0,-106,-19.20322,-210.246,0,0,1"/>
+    <item time="12" type="Icon" target="n30_ideq" label="iconFrame" value="ui://60pk7zrmfafgm"/>
+    <item time="12" type="Shake" target="n30_ideq" label="shakeFrame" value="3,0.5"/>
+  </transition>
+</component>

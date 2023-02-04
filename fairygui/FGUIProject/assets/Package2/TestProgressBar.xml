@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="60,15" extention="ProgressBar">
+  <displayList>
+    <graph id="n0_vx1s" name="n0" xy="0,0" size="60,15" type="rect" lineColor="#ffa0a0a0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_vx1s" name="bar" xy="0,3" size="60,9" type="rect" lineSize="0" fillColor="#ff3399ff"/>
+    <graph id="n2_vx1s" name="n2" xy="50,3" size="10,10" type="rect" fillColor="#ffff0000">
+      <relation target="n1_vx1s" sidePair="right-right"/>
+    </graph>
+  </displayList>
+  <ProgressBar/>
+</component>

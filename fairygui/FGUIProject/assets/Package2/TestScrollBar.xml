@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="200,17" extention="ScrollBar">
+  <displayList>
+    <graph id="n0_vx1s" name="n0" xy="0,0" size="200,17" touchable="false" type="rect" lineSize="0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_vx1s" name="bar" xy="20,0" size="160,17">
+      <relation target="" sidePair="width-width"/>
+    </graph>
+    <component id="n2_vx1s" name="arrow1" src="fafgg" fileName="TestScrollBar_arrow1.xml" xy="0,0">
+      <relation target="" sidePair="left-left"/>
+    </component>
+    <component id="n3_vx1s" name="arrow2" src="fafgh" fileName="TestScrollBar_arrow2.xml" xy="180,0">
+      <relation target="" sidePair="right-right"/>
+    </component>
+    <component id="n4_vx1s" name="grip" src="fafgi" fileName="TestScrollBar_grip.xml" xy="20,0"/>
+  </displayList>
+  <ScrollBar/>
+</component>

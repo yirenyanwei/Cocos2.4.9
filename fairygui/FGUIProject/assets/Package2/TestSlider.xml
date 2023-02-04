@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="60,13" extention="Slider">
+  <displayList>
+    <graph id="n0_vx1s" name="n0" xy="0,0" size="60,13" type="rect" lineColor="#ffa0a0a0" fillColor="#fff0f0f0">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <graph id="n1_vx1s" name="bar" xy="5,3" size="50,7" type="rect" lineSize="0" fillColor="#ff3399ff"/>
+    <component id="n2_vx1s" name="grip" src="fafge" fileName="TestSlider_grip.xml" xy="50,-3">
+      <relation target="n1_vx1s" sidePair="right-right"/>
+    </component>
+  </displayList>
+  <Slider/>
+</component>

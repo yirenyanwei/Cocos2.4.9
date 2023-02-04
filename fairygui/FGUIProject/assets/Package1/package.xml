@@ -66,5 +66,5 @@
     <component id="drif2n" name="WindowFrame1.xml" path="/window/"/>
     <component id="drif2o" name="closeBtn.xml" path="/window/"/>
   </resources>
-  <publish name=""/>
+  <publish name="" codePath="/Users/yanwei/Documents/Progects/Cocos2.4.9/assets/resources/UI/Script"/>
 </packageDescription>
