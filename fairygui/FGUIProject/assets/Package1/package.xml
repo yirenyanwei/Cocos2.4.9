@@ -65,6 +65,7 @@
     <component id="drif2m" name="PopupMenu1.xml" path="/" exported="true"/>
     <component id="drif2n" name="WindowFrame1.xml" path="/window/"/>
     <component id="drif2o" name="closeBtn.xml" path="/window/"/>
+    <component id="gpb12p" name="Component4.xml" path="/" exported="true"/>
   </resources>
-  <publish name="" codePath="/Users/yanwei/Documents/Progects/Cocos2.4.9/assets/resources/UI/Script"/>
+  <publish name="" codePath="/Users/yanwei/Documents/Projects/Cocos2.4.9/assets/resources/UI"/>
 </packageDescription>

@@ -7,7 +7,7 @@
     <graph id="n3_hjq1" name="n3" xy="18,98" size="100,100" type="rect"/>
     <loader id="n4_hjq1" name="n4" xy="199,151" pivot="0.5,0.5" anchor="true" size="94,94" autoSize="true"/>
     <text id="n5_hjq1" name="n5" xy="270,142" size="81,19" fontSize="12" color="#ffffff" text="12345678910"/>
-    <richtext id="n6_hjq1" name="n6" xy="423,143" size="73,19" fontSize="12" color="#ffffff" ubb="true" text="&lt;a href=&apos;onClickRich&apos;&gt;Hello World&lt;/a&gt;"/>
+    <richtext id="n6_hjq1" name="n6" xy="423,143" size="71,19" fontSize="12" color="#ffffff" ubb="true" text="&lt;a href=&apos;onClickRich&apos;&gt;Hello World&lt;/a&gt;"/>
     <text id="n7_vx1s" name="n7" xy="30,227" size="126,19" fontSize="12" color="#ffffff" autoSize="none" text="123456" input="true"/>
     <text id="n9_vx1s" name="n9" xy="192,222" size="25,19" group="n11_vx1s" fontSize="12" color="#ffffff" text="123"/>
     <text id="n10_vx1s" name="n10" xy="248,222" size="25,19" group="n11_vx1s" fontSize="12" color="#ffffff" text="456"/>
@@ -41,7 +41,7 @@
     </list>
     <graph id="n27_vx1s" name="n27" xy="141,452" size="55,55" type="rect"/>
     <text id="n28_vx1s" name="n28" xy="148,470" size="42,19" fontSize="12" color="#ff0000" text="popup"/>
-    <component id="n29_ideq" name="n29" src="fafgk" fileName="TestDrag.xml" xy="241,448"/>
+    <component id="n29_ideq" name="n29" src="fafgk" fileName="TestDrag.xml" xy="234,450"/>
     <loader id="n30_ideq" name="n30" xy="405,495" pivot="0.5,0.5" anchor="true" size="94,94" url="ui://60pk7zrmfafgl"/>
   </displayList>
   <transition name="t0">

@@ -32,5 +32,5 @@
     <component id="fafgs" name="WindowFrame.xml" path="/"/>
     <component id="fafgt" name="WindowClose.xml" path="/"/>
   </resources>
-  <publish name="" codePath="/Users/yanwei/Documents/Progects/Cocos2.4.9/assets/resources/UI/Script"/>
+  <publish name="" codePath="/Users/yanwei/Documents/Projects/Cocos2.4.9/assets/resources/UI"/>
 </packageDescription>

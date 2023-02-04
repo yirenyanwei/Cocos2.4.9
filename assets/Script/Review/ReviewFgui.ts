@@ -285,6 +285,9 @@ export default class NewClass extends cc.Component {
         })
         //播放速度
         transition.timeScale = 0.5;
+
+        //适配
+        
     }
     onClickRich(link:string){
         cc.log('onClickRich', link)

@@ -1,6 +1,6 @@
 {
-  "path": "/Users/yanwei/Documents/Progects/FairyGUI/FGUIProject/publish",
-  "branchPath": "/Users/yanwei/Documents/Progects/FairyGUI/FGUIProject/publish",
+  "path": "/Users/yanwei/Documents/Projects/Cocos2.4.9/assets/resources/UI",
+  "branchPath": "/Users/yanwei/Documents/Projects/Cocos2.4.9/assets/resources/UI",
   "fileExtension": "bin",
   "packageCount": 2,
   "compressDesc": false,
@@ -9,7 +9,7 @@
   "compressPNG": false,
   "codeGeneration": {
     "allowGenCode": false,
-    "codePath": "/Users/yanwei/Documents/Progects/Cocos2.4.9/assets/resources/UI/Script",
+    "codePath": "/Users/yanwei/Documents/Projects/Cocos2.4.9/assets/resources/UI",
     "classNamePrefix": "UI_",
     "memberNamePrefix": "m_",
     "packageName": null,
