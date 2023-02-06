@@ -12,6 +12,7 @@ import { AbsProductBX, AbsProductXYJ, HaierFactory } from "../Design/AbstractFac
 import { Adaptee, Target, Adapter } from "../Design/AdapterPattern";
 import { RefinedAbstraction, ConcreteImplementorA } from "../Design/BridgePattern";
 import { testDecorator } from "../Design/Decorator";
+import { testMediator } from "../Design/MediatorPattern";
 
 @ccclass
 export default class NewClass extends cc.Component {
@@ -72,5 +73,8 @@ export default class NewClass extends cc.Component {
 
         //装饰器模式
         testDecorator();
+
+        //中介者模式
+        testMediator();
     }
 }
